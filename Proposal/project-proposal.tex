@@ -304,34 +304,34 @@ This project will be done using the CS department's oracle database and using PH
 	\end{itemize}		
 			
 	
-	\item View Drug Supply
-	\begin{itemize}
-		\item \textbf{User:} Drug Lord or Dealer.
-		\item \textbf{Input:} Drug Lord (\underline{DLID}) or Dealer id (\underline{DID})
-		\item \textbf{Output:} Amount of cocaine a Drug Lord (in kilograms) or Dealer (in grams) should have, \say{Account Does Not Exist} or \say{Access Denied}.
-		\item \textbf{Basic Case:} If a Drug Lord id is given, then the amount of cocaine the Drug Lord should have is returned. If a Dealer id is given then the amount of cocaine the Dealer should have is returned.
-		\item \textbf{Exceptions:}
-		\begin{enumerate}
-			\item If the Drug Lord or Dealer id is not in the database, transaction is aborted and \say{Account Does Not Exist} is returned.
-			\item If a Drug Lord tries to access information about another Drug Lord or Dealer not in his/her territorhy (i.e. a Drug Lord from Territory $i$ tries to access information of a Dealer/Drug Lord from a Territory $j$, where $i\neq j$), then \say{Access Denied} is returned.	
-			\item If a Dealer tries to access information about a Drug Lord or any Dealers other than him/herself, then \say{Access Denied} is returned.	
-		\end{enumerate}
-	\end{itemize}	
-	
-	
-	\item View Money Supply
-	\begin{itemize}
-		\item \textbf{User:} Drug Lord or Dealer.
-		\item \textbf{Input:} Drug Lord (\underline{DLID}) or Dealer id (\underline{DID})
-		\item \textbf{Output:} Amount of money (in USD) a Drug Lord or Dealer should have, \say{Account Does Not Exist} or \say{Access Denied}.
-		\item \textbf{Basic Case:} If a Drug Lord id is given, then the amount of cash the Drug Lord should have is returned. If a Dealer id is given then the amount of cash the Dealer should have is returned.
-		\item \textbf{Exceptions:}
-		\begin{enumerate}
-			\item If the Drug Lord or Dealer id is not in the database, transaction is aborted and \say{Account Does Not Exist} is returned.
-			\item If a Drug Lord tries to access information about another Drug Lord or Dealer not in his/her territorhy (i.e. a Drug Lord from Territory $i$ tries to access information of a Dealer/Drug Lord from a Territory $j$, where $i\neq j$), then \say{Access Denied} is returned.	
-			\item If a Dealer tries to access information about a Drug Lord or any Dealers other than him/herself, then \say{Access Denied} is returned.	
-		\end{enumerate}
-	\end{itemize}	
+%	\item View Drug Supply
+%	\begin{itemize}
+%		\item \textbf{User:} Drug Lord or Dealer.
+%		\item \textbf{Input:} Drug Lord (\underline{DLID}) or Dealer id (\underline{DID})
+%		\item \textbf{Output:} Amount of cocaine a Drug Lord (in kilograms) or Dealer (in grams) should have, \say{Account Does Not Exist} or \say{Access Denied}.
+%		\item \textbf{Basic Case:} If a Drug Lord id is given, then the amount of cocaine the Drug Lord should have is returned. If a Dealer id is given then the amount of cocaine the Dealer should have is returned.
+%		\item \textbf{Exceptions:}
+%		\begin{enumerate}
+%			\item If the Drug Lord or Dealer id is not in the database, transaction is aborted and \say{Account Does Not Exist} is returned.
+%			\item If a Drug Lord tries to access information about another Drug Lord or Dealer not in his/her territorhy (i.e. a Drug Lord from Territory $i$ tries to access information of a Dealer/Drug Lord from a Territory $j$, where $i\neq j$), then \say{Access Denied} is returned.	
+%			\item If a Dealer tries to access information about a Drug Lord or any Dealers other than him/herself, then \say{Access Denied} is returned.	
+%		\end{enumerate}
+%	\end{itemize}	
+%	
+%	
+%	\item View Money Supply
+%	\begin{itemize}
+%		\item \textbf{User:} Drug Lord or Dealer.
+%		\item \textbf{Input:} Drug Lord (\underline{DLID}) or Dealer id (\underline{DID})
+%		\item \textbf{Output:} Amount of money (in USD) a Drug Lord or Dealer should have, \say{Account Does Not Exist} or \say{Access Denied}.
+%		\item \textbf{Basic Case:} If a Drug Lord id is given, then the amount of cash the Drug Lord should have is returned. If a Dealer id is given then the amount of cash the Dealer should have is returned.
+%		\item \textbf{Exceptions:}
+%		\begin{enumerate}
+%			\item If the Drug Lord or Dealer id is not in the database, transaction is aborted and \say{Account Does Not Exist} is returned.
+%			\item If a Drug Lord tries to access information about another Drug Lord or Dealer not in his/her territorhy (i.e. a Drug Lord from Territory $i$ tries to access information of a Dealer/Drug Lord from a Territory $j$, where $i\neq j$), then \say{Access Denied} is returned.	
+%			\item If a Dealer tries to access information about a Drug Lord or any Dealers other than him/herself, then \say{Access Denied} is returned.	
+%		\end{enumerate}
+%	\end{itemize}	
 
 
 	\item Transfer Drugs
